@@ -11,14 +11,18 @@ function App() {
   const [input, setInput] = useState('');
 
   const agregarInput = val => {
-    setInput(input + val)
+    if (input.length < 20) {
+      setInput(input + val)
+    } else {
+      setInput('wait, are you from NASA?')
+    }
   };
 
   const result = () => {
-    if(input) {
+    if (input) {
       setInput(evaluate(input))
     } else {
-      alert("set values, dummy")
+      setInput('set values, dummy')
     }
   };
 
@@ -52,7 +56,7 @@ function App() {
           <Boton manejarClic={agregarInput}>*</Boton>
         </div>
         <div className='fila'>
-          <Boton manejarClic={result}>=</Boton>
+          <Boton id="equals" manejarClic={result}>=</Boton>
           <Boton manejarClic={agregarInput}>0</Boton>
           <Boton manejarClic={agregarInput}>.</Boton>
           <Boton manejarClic={agregarInput}>/</Boton>
