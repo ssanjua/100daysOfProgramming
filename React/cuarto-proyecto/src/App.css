@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #0a6789; 
+  --red: #cf0638;
+  --green: #0a996f;
+  --orange: #fa6632;
+  --yellow: #fecd23;
+}
+
+html,
+body {
+  color: white;
+  background-color: #767676;
+  font-family: 'Pixelify Sans Variable', system-ui;
+  margin-top: 40px;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  
+}
+
+.display-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+
+.display {
+  background-color: var(--orange);
+  font-family: 'Pixelify Sans Variable', system-ui;
+
+  padding: 10px;
+  border: 3px solid white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 0px 0px rgba(0,0,0,0.75);
+}
+
+h1 {
+  color:white;
+  font-size: 1.5rem;
+  font-family: Roboto, sans-serif;
+}
+
+.todo-app-tasks {
+  width: 500px;
+  min-height: 500px;
+  background-color: var(--yellow);
+  padding: 30px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 3px solid rgb(219, 219, 219);
+  box-shadow: 11px 10px 0px 0px rgba(0,0,0,0.75);
+
+}
+
+.credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}

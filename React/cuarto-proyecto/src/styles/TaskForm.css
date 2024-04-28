@@ -1,0 +1,33 @@
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.task-input {
+  width: 350px;
+  font-size: 18px;
+  background-color: rgb(43, 43, 43);
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  padding: 14px 32px 14px 16px;
+  border-radius: 10px 0 0 10px;
+  border: 3px solid rgb(219, 219, 219);
+  outline: none;
+  box-shadow: 11px 10px 0px 0px rgba(0,0,0,0.75);
+}
+
+.task-button {
+  padding: 17px;
+  font-size: 18px;
+  font-family: 'Patrick Hand', cursive;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--green);
+  color: white;
+  box-shadow: 11px 10px 0px 0px rgba(0,0,0,0.75)
+}
