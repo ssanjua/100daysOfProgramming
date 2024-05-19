@@ -1,0 +1,33 @@
+POST http://localhost:3000/api/programacion HTTP/1.1s
+Content-Type: application/json
+
+{
+  "id": 88,
+  "titulo": "otra cosa",
+  "lenguaje": "python",
+  "vistas": 23123131,
+  "nivel": "basico"
+}
+
+###
+PUT http://localhost:3000/api/programacion/1 HTTP/1.1s
+Content-Type: application/json
+
+{
+  "id": 1,
+  "titulo": "otra actualizada cosa",
+  "lenguaje": "python",
+  "vistas": 233131,
+  "nivel": "basico"
+}
+
+###
+PATCH http://localhost:3000/api/programacion/3 HTTP/1.1s
+Content-Type: application/json
+
+{
+  "nivel": "dsadadbasico"
+}
+
+###
+DELETE http://localhost:3000/api/programacion/1
